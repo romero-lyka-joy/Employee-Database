@@ -1,0 +1,49 @@
+employees  
+---  
+emp_id PK int FK >- engagement.employee_id
+first_name  varchar(50)  
+last_name  varchar(50)  
+start_date  date  
+exit_date  date  
+job_title  varchar(50)  
+supervisor  varchar(50)  
+email  varchar(100)  
+business_unit  varchar(50)  
+employee_status  varchar(50)  
+employee_type  varchar(50)  
+payzone  varchar(10)  
+employee_classification  varchar(50)  
+termination_type  varchar(50)  
+termination_description  varchar(50)  
+department_type  varchar(50)  
+division  varchar(50)  
+birthdate  date  
+state  varchar(5)  
+job_function_desc  varchar(50)  
+gender_code  varchar(50)  
+location_code  int  
+race  varchar(50)  
+marital_status  varchar(50)  
+performance_score  varchar(10)
+current_employee_rating  int  
+reused_email  bit  
+
+tnd
+---
+employee_id PK int FK >- employees.emp_id
+training_date date
+training_program_name varchar(100)
+training_type varchar(50)
+training_outcome varchar(50)
+location varchar(100)
+trainer varchar(50)
+training_duration_days int
+training_cost decimal(10,2)
+
+engagement
+---  
+employee_id  PK int  
+survey_date  date  
+engagement_score  int  
+satisfaction_score  int  
+work_life_balance_score  int
